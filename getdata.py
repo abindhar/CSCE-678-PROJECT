@@ -16,8 +16,7 @@ import configparser
 # and currect version of Python is installed on all the worker nodes.
 
 class TweeterStreamListener(tweepy.StreamListener):
-    """ A class to read the twitter stream and push it to Kafka"""
-
+    """ A class to read the twitter stream and push it to Kafka"""   
     def __init__(self, api):
         self.api = api
         super(tweepy.StreamListener, self).__init__()
@@ -29,39 +28,40 @@ class TweeterStreamListener(tweepy.StreamListener):
     def on_status(self, status):
         """ This method is called whenever new data arrives from live stream.
         We asynchronously push this data to kafka queue"""
+        print('ok')
         msg =  status.text.encode('utf-8')
         try:
-            self.producer.send_messages(b'twitterstream', msg)
+            self.producer.send_messages('twitterstream', msg)
         except Exception as e:
             print(e)
             return False
         return True
 
     def on_error(self, status_code):
-        print("Error received in kafka producer")
+        print("Error received in kafka producer",status_code)
         return True # Don't kill the stream
 
     def on_timeout(self):
+        print("Timeout occured")
         return True # Don't kill the stream
 
 if __name__ == '__main__':
 
     # Read the credententials from 'twitter-app-credentials.txt' file
     config = configparser.ConfigParser()
-    config.read('twitter-app-credentials.txt')
-    consumer_key = config['DEFAULT']['consumerKey']
-    consumer_secret = config['DEFAULT']['consumerSecret']
-    access_key = config['DEFAULT']['accessToken']
-    access_secret = config['DEFAULT']['accessTokenSecret']
+    consumer_key = 'UopwaRDXmyG56bzjgxZwC6o9y'
+    consumer_secret = 'j3eFs3PQwPLJGR263viSKutHYhpxP4EF1Sv9MAyevakWDluSVU'
+    access_key = '90159436-mhrgUtdfmfeP8yrd1MYgcMtSB27tPPB5u4nPFWqpp'
+    access_secret = 'wGjnX9zdk5zl0zfpqhOdxD15mANy5c3tBmz5iAEf8lTSt'
 
     # Create Auth object
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_key, access_secret)
+    auth.set_access_token(access_key, access_secret)                
     api = tweepy.API(auth)
 
+    
     # Create stream and bind the listener to it
-    stream = tweepy.Stream(auth, listener = TweeterStreamListener(api))
+    stream = tweepy.Stream(auth, listener = TweeterStreamListener(api))                    #Note: use verify = False (in case of OpenSSL error)
 
     #Custom Filter rules pull all traffic for those filters in real time.
-    #stream.filter(track = ['love', 'hate'], languages = ['en'])
-    stream.filter(track=['C++'],locations=[-180,-90,180,90], languages = ['en'])
+    stream.filter(track = ['Blackhole'], languages = ['en'])
