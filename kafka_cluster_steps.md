@@ -16,3 +16,8 @@ Check if topic is created. bin/kafka-topics.sh --list --bootstrap-server localho
 Run on producer. bin/kafka-console-producer.sh --broker-list localhost:9092 --topic sample_test
 
 Run on consumer. bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic sample_test --from-beginning
+
+Spark submit:-
+spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.2.jar consumer.py 
+
+
