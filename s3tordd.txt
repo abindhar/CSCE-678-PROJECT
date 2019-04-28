@@ -1,0 +1,30 @@
+# coding: utf-8
+from pyspark import SparkContext, SparkConf
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import *
+from pyspark.sql.types import StringType
+from pyspark import SQLContext
+from itertools import islice
+from pyspark.sql.functions import col
+import sys
+#sqlContext = SQLContext(sc)
+
+conf=SparkConf().setAppName("PleaseWork")
+sc=SparkContext(conf=conf)
+
+
+#Reading the csv file and storing it in an RDD
+rdd1= sc.textFile("s3a://aws-logs-777043604358-us-east-2/Sentiment.csv")
+print("**********************************************************************************************************************************************************")
+print(rdd1.take(10)) #print first 10 elements of RDD
+data=rdd1.map(lambda line: line.split(','))
+#https://s3.us-east-2.amazonaws.com/aws-logs-777043604358-us-east-2/Sentiment.csv
+print('*********************************************************************************************************************************************************')
+#df = rdd1.toDF(['id', 'candidate', 'candidate_confidence', 'relevant_yn', 'relevant_yn_confidence', 'sentiment', 'sentiment_confidence', 'subject_matter', 'subject_matter_confidence', 'candidate_gold', 'name', 'relevant_yn_gold', 'retweet_count', 'sentiment_gold', 'subject_matter_gold', 'text', 'tweet_coord', 'tweet_created', 'tweet_id', 'tweet_location', 'user_timezone'])
+#df=rdd1.toDF()
+#df.show()
+print(type(rdd1),type(data))
+
+#df1 = rdd1.toDF([‘policyID’,’statecode’,’county’,’eq_site_limit’])
+#df1.show()
+SparkContext.stop()
