@@ -64,4 +64,4 @@ if __name__ == '__main__':
     stream = tweepy.Stream(auth, listener = TweeterStreamListener(api))                    #Note: use verify = False (in case of OpenSSL error)
 
     #Custom Filter rules pull all traffic for those filters in real time.
-    stream.filter(track = ['USA'], languages = ['en'])
+    stream.filter(track = ['DataScience','Avengers','BigData'], languages = ['en'])
