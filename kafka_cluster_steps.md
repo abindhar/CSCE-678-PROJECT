@@ -18,6 +18,5 @@ Run on producer. bin/kafka-console-producer.sh --broker-list localhost:9092 --to
 Run on consumer. bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic sample_test --from-beginning
 
 Spark submit:-
-spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.2.jar consumer.py 
-
+spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.2.jar,spark-core_2.11-1.5.2.logging.jar consumer.py
 
