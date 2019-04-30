@@ -1,0 +1,130 @@
+-------------------------------------------
+Time: 2019-04-30 06:04:00
+-------------------------------------------
+
+-------------------------------------------
+Time: 2019-04-30 06:04:10
+-------------------------------------------
+('#got', 7, 'negative')
+('#fashion', 2, 'positive')
+('#avengers', 2, 'negative')
+('#battleofwinterfell', 1, 'positive')
+('#india’s', 1, 'positive')
+('#aryastark', 1, 'neutral')
+('#avengersendgame', 1, 'neutral')
+('#got.', 1, 'negative')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:04:20
+-------------------------------------------
+('#gameofthrones', 3, 'positive')
+('#got', 2, 'neutral')
+('#avengersendgame', 2, 'neutral')
+('#thor', 2, 'neutral')
+('#gameofthrones,different', 1, 'neutral')
+('#melisandre', 1, 'neutral')
+('#kerala', 1, 'neutral')
+('#avengers', 1, 'neutral')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:04:30
+-------------------------------------------
+('#got', 6, 'negative')
+('#gameofthrones', 4, 'positive')
+('#thor', 2, 'neutral')
+('#avengers', 2, 'negative')
+('#endgame', 1, 'positive')
+('#bringbacktrueindology', 1, 'neutral')
+('#sansastark…', 1, 'negative')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:04:40
+-------------------------------------------
+('#got', 5, 'positive')
+('#gameofthrones', 2, 'positive')
+('#avengersendgamespoilers', 1, 'positive')
+('#gameofpens', 1, 'neutral')
+('#travel', 1, 'neutral')
+('#battleofwinterfell', 1, 'neutral')
+('#notto…', 1, 'negative')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:04:50
+-------------------------------------------
+('#gameofthrones', 8, 'positive')
+('#got', 6, 'neutral')
+('#avengersinfinitywar', 1, 'positive')
+('#arya\xa0', 1, 'neutral')
+('#avengersendgame', 1, 'neutral')
+('#gameofthrones,different', 1, 'neutral')
+('#avengers', 1, 'neutral')
+('#gameofthrone…', 1, 'negative')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:05:00
+-------------------------------------------
+('#got', 4, 'positive')
+('#gameofthrones', 2, 'neutral')
+('#avengers', 1, 'positive')
+('#india', 1, 'positive')
+('#got’s', 1, 'neutral')
+('#battleofwinterfell', 1, 'neutral')
+('#aryahive', 1, 'neutral')
+('#forthethrone', 1, 'neutral')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:05:10
+-------------------------------------------
+('#got', 5, 'positive')
+('#nightking', 1, 'positive')
+('#gameofthrones', 1, 'neutral')
+('#gameofthrones\xa0\xa0', 1, 'neutral')
+('#battleofwinterfell', 1, 'neutral')
+('#military', 1, 'negative')
+('[]', 0, 'neutral')
+
+-------------------------------------------
+Time: 2019-04-30 06:05:20
+-------------------------------------------
+('#got', 10, 'negative')
+('#avengersendgamespoilers', 1, 'positive')
+('#gameofthornes', 1, 'neutral')
+('#gameofthrones', 1, 'neutral')
+('#avengers', 1, 'neutral')
+('#battleofwinterfell', 1, 'neutral')
+('#gameofthrones\xa0', 1, 'neutral')
+('#nottoday', 1, 'neutral')
+('#avengersendgame', 1, 'neutral')
+('#indiannavy', 1, 'negative')
+
+-------------------------------------------
+Time: 2019-04-30 06:05:30
+-------------------------------------------
+('#got', 7, 'neutral')
+('#avengersendgame', 3, 'neutral')
+('#gameofthrones', 3, 'neutral')
+('#gameofthrones\xa0\xa0', 1, 'neutral')
+('#loki', 1, 'neutral')
+('#aryastark', 1, 'neutral')
+('#avengers', 1, 'neutral')
+('#nottoday', 1, 'neutral')
+('#issues', 1, 'negative')
+('#arya', 1, 'negative')
+
+-------------------------------------------
+Time: 2019-04-30 06:05:40
+-------------------------------------------
+('#got', 6, 'positive')
+('#gameofthrones', 6, 'positive')
+('#nightking', 2, 'positive')
+('#avengersendgame', 2, 'neutral')
+('#gamefthrones', 1, 'neutral')
+('#bringbacktrueindology', 1, 'neutral')
+('[]', 0, 'neutral')
+
