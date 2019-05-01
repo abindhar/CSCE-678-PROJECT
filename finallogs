@@ -1,0 +1,71 @@
+-------------------------------------------
+Time: 2019-05-01 01:00:00
+-------------------------------------------
+
+-------------------------------------------
+Time: 2019-05-01 01:02:00
+-------------------------------------------
+('#gameofthrones', 368, 'positive')
+('#uncc', 136, 'negative')
+('#uncc:', 30, 'negative')
+('#nottoday', 17, 'negative')
+('#avengersendgame', 16, 'positive')
+('#aryastark', 11, 'positive')
+('#breaking:', 10, 'negative')
+('#tennessee\n1', 8, 'positive')
+('#avengers', 8, 'positive')
+('#uncc.', 8, 'positive')
+
+-------------------------------------------
+Time: 2019-05-01 01:04:00
+-------------------------------------------
+('#gameofthrones', 394, 'positive')
+('#uncc', 111, 'negative')
+('#avengersendgame', 20, 'positive')
+('#uncc:', 18, 'negative')
+('#uncc.', 16, 'positive')
+('#aryastark', 15, 'positive')
+('#nottoday', 14, 'negative')
+('#got', 12, 'positive')
+('#tennessee\n1', 9, 'positive')
+('#nightking', 9, 'positive')
+
+-------------------------------------------
+Time: 2019-05-01 01:06:00
+-------------------------------------------
+('#gameofthrones', 404, 'positive')
+('#uncc', 105, 'neutral')
+('#nottoday', 21, 'negative')
+('#aryastark', 19, 'positive')
+('#avengersendgame', 17, 'positive')
+('#happinessbegins', 14, 'neutral')
+('#uncc:', 14, 'negative')
+('#nightking', 12, 'positive')
+('#got', 12, 'positive')
+('#battleofwinterfell', 12, 'negative')
+
+-------------------------------------------
+Time: 2019-05-01 01:08:00
+-------------------------------------------
+('#cerseilannister', 452, 'positive')
+('#gameofthrones', 369, 'positive')
+('#uncc', 111, 'positive')
+('#avengersendgame', 23, 'positive')
+('#nottoday', 21, 'negative')
+('#happinessbegins', 18, 'positive')
+('#aryastark', 15, 'positive')
+('#uncc:', 14, 'negative')
+('#tennessee\n1', 9, 'positive')
+('#nightking', 8, 'positive')
+
+Traceback (most recent call last):
+  File "/home/harmeet_nith/kafka_2.12-2.2.0/final_working.py", line 57, in <module>
+    ssc.awaitTermination()
+  File "/home/harmeet_nith/spark/python/lib/pyspark.zip/pyspark/streaming/context.py", line 206, in awaitTermination
+  File "/home/harmeet_nith/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1255, in __call__
+  File "/home/harmeet_nith/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 985, in send_command
+  File "/home/harmeet_nith/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1152, in send_command
+  File "/usr/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/home/harmeet_nith/spark/python/lib/pyspark.zip/pyspark/context.py", line 266, in signal_handler
+KeyboardInterrupt
