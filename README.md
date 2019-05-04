@@ -24,4 +24,13 @@ The project goal is to perform the sentiment analysis on trending hashtags' twee
 	->Start the producer : $python3 producer.py \
 	->Start the consumer by Spark submit:- spark-submit --jars spark-streaming-kafka-0-8-assembly_2.11-2.4.2.jar,spark-core_2.11-1.5.2.logging.jar consumer.py\
 	->Trending hashtags with the overallsentiment analysis  will be displayed on the conumer console
+	
+	
+**Final source files:** \
+Please check the below source files for the final working implementation : 
+
+**Demo** \
+A complete demo of the project is available in the link : https://drive.google.com/open?id=17epWAJ_lpYV8rgE6l-JEbMr3S3e0QCML
+
+
 
