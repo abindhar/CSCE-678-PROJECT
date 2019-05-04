@@ -34,7 +34,7 @@ The model architecture is as below,
 	
 	
 **Final source files:** \
-Please check the below source files for the final working implementation : 
+Please check the below source files for the final working implementation : final_producer.py, final_consumer.py
 
 **Demo :** \
 A complete demo of the project is available in the link : https://drive.google.com/open?id=17epWAJ_lpYV8rgE6l-JEbMr3S3e0QCML
