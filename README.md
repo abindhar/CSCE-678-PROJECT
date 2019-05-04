@@ -29,7 +29,7 @@ The project goal is to perform the sentiment analysis on trending hashtags' twee
 **Final source files:** \
 Please check the below source files for the final working implementation : 
 
-**Demo** \
+**Demo :** \
 A complete demo of the project is available in the link : https://drive.google.com/open?id=17epWAJ_lpYV8rgE6l-JEbMr3S3e0QCML
 
 
