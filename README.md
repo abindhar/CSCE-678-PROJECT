@@ -5,6 +5,12 @@ The project goal is to perform the sentiment analysis on trending hashtags' twee
 
 
 **Project flow:**\
+The model architecture is as below,
+
+![Model Architecture](model_architecture.png)
+
+
+
 	->Get the live stream of tweets(using twitter API and tweepy module) onto Kafka Producer\
 	->On the producer, filter the live stream based on selective topics\
 	->On the spark-installed consumer,
