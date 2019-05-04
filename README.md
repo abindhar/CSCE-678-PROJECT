@@ -9,9 +9,9 @@ The project goal is to perform the sentiment analysis on trending hashtags' twee
 	->On the producer, filter the live stream based on selective topics\
 	->On the spark-installed consumer,
 	    
-	    ->Filter the tweets with hashtags\
-	    ->Based on map reduce operations, obtain the top 10 trending hashtags\
-	    ->Perform a sentiment analysis on all the tweets pertaining to trending hashtags\
+	    ->Filter the tweets with hashtags
+	    ->Based on map reduce operations, obtain the top 10 trending hashtags
+	    ->Perform a sentiment analysis on all the tweets pertaining to trending hashtags
 	    ->Aggregate the analysis of all tweets for each ofthe trending hashtags and report the overall sentiment of hashtags
 		
 		
